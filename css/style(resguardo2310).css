@@ -1,0 +1,293 @@
+header {
+    min-height: 70px;
+}
+
+header li {
+    margin: 0;
+    padding: 0 5px;
+}
+
+header li a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #8f8f8f;
+    padding: auto 5px;
+    transition: 0.3s;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+header .active > a, header .active > a:hover {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+/* ----------SECCIONES>>>>>>>>>>*/
+#nosotros {
+    background-image: linear-gradient(to bottom, rgb(75, 75, 75, 0.3) 20%, rgba(0, 0, 0, 1) 100%), url("../img/fondos/pexels-quintin-gellar-2199293.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px);
+    position:relative;
+    z-index: 1;
+    min-height: 90vh;
+}
+
+.blury {
+    backdrop-filter: blur(2px);
+}
+
+.titulos {
+    font-family: 'Lato';
+    font-style: italic;
+    font-size: 60px;
+    font-weight:500;
+    color: white;
+    text-align: center;
+}
+
+.info {
+    font-family: 'Source Sans Pro';
+    font-style: italic;
+    font-size: 25px;
+    font-weight: normal;
+    color: white;
+    text-align:center;
+}
+
+.fundido {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 25%, rgba(219,219,219,0) 50%, rgba(0,0,0,1) 75%);
+}
+
+.borde {
+    border: 1px solid black;
+}
+
+/*--------------------------------------------------------------
+# Testimonios
+--------------------------------------------------------------*/
+.card {
+    /*border: solid black 1px;*/
+    border:none;
+}
+
+.user-content p {
+    margin-top: 5px;
+    font-size: 12px
+}
+
+.ratings i {
+    color: blue
+}
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #1acc8d;
+    border-top-color: #d2f9eb;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+  }
+  
+  @-webkit-keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /*--------------------------------------------------------------
+  # Back to top button
+  --------------------------------------------------------------*/
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #1acc8d;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+  }
+  .back-to-top i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+  }
+  .back-to-top:hover {
+    background: #2be4a2;
+    color: #fff;
+  }
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /*--------------------------------------------------------------
+  # Disable AOS delay on mobile
+  --------------------------------------------------------------*/
+  @media screen and (max-width: 768px) {
+    [data-aos-delay] {
+      transition-delay: 0 !important;
+    }
+  }
+
+  /*--------------------------------------------------------------
+# Contacto
+--------------------------------------------------------------*/
+.contacto .info {
+    width: 100%;
+    background: #fff;
+  }
+  .contacto .info i {
+    font-size: 20px;
+    color: red;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #f0f0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  .contacto .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: red;
+  }
+  .contacto .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: black;
+  }
+  .contacto .info .email, .contacto .info .telefono {
+    margin-top: 40px;
+  }
+  .contacto .info .email:hover i, .contacto .info .direccion:hover i, .contacto .info .telefono:hover i {
+    background: #1acc8d;
+    color: #fff;
+  }
+  .contacto .php-email-form {
+    width: 100%;
+    background: #fff;
+  }
+  .contacto .php-email-form .form-group {
+    padding-bottom: 8px;
+  }
+  .contacto .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+  .contacto .php-email-form .error-message br + br {
+    margin-top: 25px;
+  }
+  .contacto .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  .contacto .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  .contacto .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  .contacto .php-email-form input, .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  .contacto .php-email-form input {
+    height: 44px;
+  }
+  .contacto .php-email-form textarea {
+    padding: 10px 12px;
+  }
+  .contacto .php-email-form button[type=submit] {
+    background: red;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  .contacto .php-email-form button[type=submit]:hover {
+    background: #34e5a6;
+  }
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

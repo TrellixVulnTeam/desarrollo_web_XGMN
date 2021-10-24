@@ -1,0 +1,40 @@
+.nos-title-text {
+  font-family: "Poppins", serif;
+  text-transform: capitalize;
+  font-variant: small-caps;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 400;
+  letter-spacing: 16px;
+  word-spacing: 10px;
+  color: #e0e0e0;
+  background-color: rgba(255, 255, 255, 0);
+  text-shadow: #ff141440 -4px -5px 5px; }
+
+.nos-title-info {
+  font-family: Marcellus, serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 25px;
+  word-spacing: 2px;
+  color: #e0e0e0;
+  background-color: #2424da80;
+  border-radius: 50px; }
+
+.fondo-blury {
+  backdrop-filter: blur(3px); }
+
+.sec-title-font {
+  padding: 80px 0;
+  overflow: hidden;
+  padding-bottom: 40px; }
+  .sec-title-font p {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #ff1414; }
+
+.fondo-gris {
+  background-color: #666666; }

@@ -1,0 +1,79 @@
+//variables
+
+//tamaños de letra
+$tam80: 80px;
+$tam60: 60px;
+$tam25: 25px;
+
+//paleta de colores definidos para el proyecto
+$negro:#000000;
+$gris:#666666;
+$blanco:#e0e0e0;
+$celeste:#87a2be;
+$azul:#2424da;
+$rojo:#ff1414;
+
+//Paleta de colores con opacidad
+$negro50:#00000080;
+$gris50:#66666680;
+$blanco50:#e0e0e080;
+$celeste50:#87a2be80;
+$azul50:#2424da80;
+$rojo50:#ff141480;
+
+$negro25:#00000040;
+$gris25:#66666640;
+$blanco25:#e0e0e040;
+$celeste25:#87a2be40;
+$azul25:#2424da40;
+$rojo25:#ff141440;
+
+
+// efectos generalos de background
+
+.nos-title-text {
+    font-family: "Poppins", serif;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: $tam80;
+    font-weight: 400;
+    letter-spacing: 16px;
+    word-spacing: 10px;
+    color: $blanco;
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: $rojo25 -4px -5px 5px;
+}
+
+.nos-title-info {
+    font-family: Marcellus, serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 25px;
+    word-spacing: 2px;
+    color: $blanco;
+    background-color: $azul50;
+    border-radius: 50px;
+}
+
+.fondo-blury {
+    backdrop-filter: blur(3px);
+}
+
+.sec-title-font {
+    padding: 80px 0;
+    overflow: hidden;
+    padding-bottom: 40px;
+    & p {
+        margin: 0;
+        font-size: $tam60;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        color: $rojo;
+    }
+}
+
+.fondo-gris {
+    background-color: $gris;
+}

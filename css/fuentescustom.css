@@ -1,0 +1,175 @@
+/* .seccionfont {
+    font-family: 'Lato', sans-serif;
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight:500;
+    text-shadow: 4px 4px 4px #aaa;
+} */
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
+    padding: 40px 0 0 0;
+  }
+  .about .icon-boxes h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #010483;
+    margin-bottom: 15px;
+  }
+  .about .icon-box {
+    margin-top: 40px;
+  }
+  .about .icon-box .icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border: 2px solid #7ceec6;
+    border-radius: 50px;
+    transition: 0.5s;
+  }
+  .about .icon-box .icon i {
+    color: #1acc8d;
+    font-size: 32px;
+  }
+  .about .icon-box:hover .icon {
+    background: #1acc8d;
+    border-color: #1acc8d;
+  }
+  .about .icon-box:hover .icon i {
+    color: #fff;
+  }
+  .about .icon-box .title {
+    margin-left: 85px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .about .title p {
+    margin: 0;
+    font-size: 100px;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-style:normal;
+    position: relative;
+    text-shadow: 5px 5px black;
+  }
+  .about .icon-box .title a {
+    color: #343a40;
+    transition: 0.3s;
+  }
+  .about .icon-box .title a:hover {
+    color: #1acc8d;
+  }
+  .about .description p {
+    font-family: 'Marcellus', serif;
+    background-blend-mode: luminosity;
+    margin-left: 85px;
+    line-height: 25px;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-style: italic;
+  }
+
+
+/* Separador de secciones */
+
+.seccionfont {
+    padding: 60px 0;
+    overflow: hidden;
+    padding-bottom: 40px;
+  }
+  .seccionfont h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+  }
+  .seccionfont h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #1acc8d;
+    margin: 4px 10px;
+  }
+  .seccionfont p {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #ff0000;
+  }
+
+  /*--------------------------------------------------------------
+# Details
+--------------------------------------------------------------*/
+.details .content + .content {
+    margin-top: 100px;
+  }
+  .details .content h3 {
+    font-weight: 600;
+    font-size: 26px;
+    color: #010483;
+  }
+  .details .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  .details .content ul li {
+    padding-bottom: 10px;
+  }
+  .details .content ul i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: #1acc8d;
+  }
+  .details .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+/* 
+font-family: 'Ephesis', cursive;
+font-family: 'IBM Plex Mono', monospace;
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Marcellus', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+  }
+  
+  a {
+    color: #1acc8d;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #34e5a6;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+  }
+
